@@ -13,9 +13,9 @@ repositories {
 
 dependencies {
     // Libraries
-    compileOnly("com.github.FiguraMC.LuaJ:luaj-core:$luaj-figura")
-    compileOnly("com.github.FiguraMC.LuaJ:luaj-jse:$luaj-figura")
-    compileOnly("org.java-websocket:Java-WebSocket:$websocket")
+    compileOnly("com.github.FiguraMC.luaj:luaj-core:$luaj-figura")
+    compileOnly("com.github.FiguraMC.luaj:luaj-jse:$luaj-figura")
+    compileOnly("com.neovisionaries:nv-websocket-client:$nv_websocket")
 
     // Figura common lib
     modCompileOnly("org.figuramc:figura-common-intermediary:$figura_version")

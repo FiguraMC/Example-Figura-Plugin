@@ -20,8 +20,12 @@ subprojects {
     repositories {
         maven { url 'https://maven.quiltmc.org/repository/release/' }
         maven {
-            name = "Figura Maven"
+            name = "Figura Maven Release"
             url = uri("https://maven.figuramc.org/releases")
+        }
+        maven {
+            name = "Figura Maven Snapshots"
+            url = uri("https://maven.figuramc.org/snapshots")
         }
         maven { url 'https://jitpack.io' }
     }

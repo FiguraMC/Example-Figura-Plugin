@@ -29,6 +29,9 @@
     ],
     "figura_vanilla_part": [
       "org.figuramc.exampleplugin.ExampleVanillaPartPlugin"
+    ],
+    "figura_example": [
+      "org.figuramc.exampleplugin.ExampleEventPlugin"
     ]
   },
   "depends": {

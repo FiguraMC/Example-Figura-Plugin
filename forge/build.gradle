@@ -34,9 +34,9 @@ repositories {
 dependencies {
     // Libraries
     // Figura already ships these libraries during runtime, they're only needed as compile dependencies
-    compileOnly("com.github.FiguraMC.LuaJ:luaj-core:$luaj-figura")
-    compileOnly("com.github.FiguraMC.LuaJ:luaj-jse:$luaj-figura")
-    compileOnly("org.java-websocket:Java-WebSocket:$websocket")
+    compileOnly("com.github.FiguraMC.luaj:luaj-core:$luaj-figura")
+    compileOnly("com.github.FiguraMC.luaj:luaj-jse:$luaj-figura")
+    compileOnly("com.neovisionaries:nv-websocket-client:$nv_websocket")
 
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
 
