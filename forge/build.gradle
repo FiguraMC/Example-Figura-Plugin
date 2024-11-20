@@ -33,9 +33,9 @@ repositories {
 
 dependencies {
     // Libraries
-    modImplementation("com.github.FiguraMC.luaj:luaj-core:$luaj-figura")
-    modImplementation("com.github.FiguraMC.luaj:luaj-jse:$luaj-figura")
-    modImplementation("com.neovisionaries:nv-websocket-client:$nv_websocket")
+    forgeRuntimeLibrary(modImplementation("com.github.FiguraMC.luaj:luaj-core:$luaj-figura"))
+    forgeRuntimeLibrary(modImplementation("com.github.FiguraMC.luaj:luaj-jse:$luaj-figura"))
+    forgeRuntimeLibrary(modImplementation("com.neovisionaries:nv-websocket-client:$nv_websocket"))
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.6"))
     implementation("io.github.llamalad7:mixinextras-forge:0.3.6")
