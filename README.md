@@ -11,7 +11,7 @@ To start, you should edit the gradle.properties and customize it to your needs. 
 This is imported into an IDE like you would for any gradle mod or project. You can then explore the common, fabric and forge packages for examples on using the API.
 If you have any questions reach out to us on our [Discord](https://discord.gg/figuramc).
 
-
+You can use @ExpectPlatform from Architectury Loom to create Platform specific methods, you can then just create implementations for those.
 
 # Links
 [discord]: https://discord.com/api/guilds/1129805506354085959/widget.png

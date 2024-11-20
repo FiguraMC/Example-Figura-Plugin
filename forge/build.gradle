@@ -33,10 +33,12 @@ repositories {
 
 dependencies {
     // Libraries
-    // Figura already ships these libraries during runtime, they're only needed as compile dependencies
-    compileOnly("com.github.FiguraMC.luaj:luaj-core:$luaj-figura")
-    compileOnly("com.github.FiguraMC.luaj:luaj-jse:$luaj-figura")
-    compileOnly("com.neovisionaries:nv-websocket-client:$nv_websocket")
+    modImplementation("com.github.FiguraMC.luaj:luaj-core:$luaj-figura")
+    modImplementation("com.github.FiguraMC.luaj:luaj-jse:$luaj-figura")
+    modImplementation("com.neovisionaries:nv-websocket-client:$nv_websocket")
+
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.6"))
+    implementation("io.github.llamalad7:mixinextras-forge:0.3.6")
 
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
 
@@ -58,7 +60,6 @@ Map<String, Object> properties = new HashMap<>()
     properties.put("display_name", rootProject.display_name)
     properties.put("description", rootProject.description)
     properties.put("authors", rootProject.authors)
-    properties.put("figura_version", rootProject.figura_version)
 
     properties.forEach((k, v) -> inputs.property(k, v.toString()))
     filesMatching("META-INF/mods.toml") {

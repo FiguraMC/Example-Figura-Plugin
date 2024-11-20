@@ -1,6 +1,7 @@
 package org.figuramc.exampleplugin;
 
 import com.mojang.datafixers.util.Pair;
+import org.figuramc.figura.avatar.Avatar;
 import org.figuramc.figura.entries.FiguraEvent;
 import org.figuramc.figura.entries.annotations.FiguraEventPlugin;
 import org.figuramc.figura.lua.LuaWhitelist;
@@ -27,8 +28,9 @@ public class ExampleEventPlugin implements FiguraEvent {
     }
 
     /**
-     *  Available so that other mods can add in Events to figura's event API.
-     *  You'd call your events from a mixin, for a more concrete example refer to Figura itself
+     *  Available so that other mods can add in Events to Figura's Event API.
+     *  Refer to ExampleMixin on how to call your events from a mixin, or for a more
+     *  concrete example refer to Figura itself
      */
     @Override
     public Collection<Pair<String, LuaEvent>> getEvents() {

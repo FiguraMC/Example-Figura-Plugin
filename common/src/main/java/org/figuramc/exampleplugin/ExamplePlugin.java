@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Example API Plugin
- *  Annotation required for Forge to Locate and Load the Plugin
+ *  @FiguraAPIPlugin Annotation required for Forge to Locate and Load the Plugin
  *  Entrypoint in fabric.mod.json: figura_api
  *  Fabric requires entrypoints have an empty constructor, Figura will not use it
  */

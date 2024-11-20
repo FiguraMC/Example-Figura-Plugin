@@ -20,7 +20,7 @@ public class ExampleExpectPlatform {
      */
     @ExpectPlatform
     public static Path getConfigDirectory() {
-        // Just throw an error, the content should get replaced at runtime.
+        // Just throw an error, the content will get replaced at compile time.
         throw new AssertionError();
     }
 }
