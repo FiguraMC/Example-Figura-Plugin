@@ -30,7 +30,7 @@
     "figura_vanilla_part": [
       "org.figuramc.exampleplugin.ExampleVanillaPartPlugin"
     ],
-    "figura_example": [
+    "figura_event": [
       "org.figuramc.exampleplugin.ExampleEventPlugin"
     ]
   },
